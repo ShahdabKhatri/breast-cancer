@@ -30,7 +30,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-clf = pickle.load(open('penguins_clf.pkl', 'rb'))
+clf = pickle.load(open('penguins_clf', 'rb'))
 
 prediction = clf.predict(df)
 prediction_proba = clf.predict_proba(df)
